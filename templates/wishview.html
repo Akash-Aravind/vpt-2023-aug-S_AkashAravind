@@ -1,0 +1,37 @@
+{%extends "base.html"%}
+{%block content%}
+{%if not dat%}
+<h2>Your wishlist is empty add something</h2>
+{%endif%}
+<div style="display:flex;justify-content:center;">
+  <h2>Search Results</h2>
+</div>
+{%for data in dat%}
+
+    <div class="card container search-container" >
+        <img class="card-img-top search-img" src="{{data.imageurl}}" style="height:200px"alt="loading....">
+        <div class="card-body">
+          <div class="book-title">
+            <h5 class="card-title " style="font-size: 30px;overflow:hidden;">{{data.title}}</h5>
+          </div>
+        </div>
+<div class="wish-links">
+    <a href="{%url 'root:detail3' data.title%}" class="btn btn-primary card-btns " style="width: 150px;">Details</a>
+    <br>
+        <a href="{%url 'root:remove' data.product%}" style="width: 150px;" class="btn btn-primary card-btns ">Remove </a>
+</div>
+      </div>
+
+
+
+
+
+
+
+{% comment %} <img src="{{data.imageurl}}" alt="">
+    {{data.title}}
+    <a href="{%url 'root:detail3' data.title%}" class="btn btn-primary card-btns ">Details</a>
+    <a href="{%url 'root:remove' data.product%}" class="btn btn-primary card-btns ">Remove </a>
+    <br> {% endcomment %}
+{%endfor%}
+{%endblock%}

@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+
+{%block content%}
+<div style="display:flex;justify-content:center;">
+  <h2>Search Results</h2>
+</div>
+<div class="search-total">
+    {%for book in queryresults%}
+    <div class="card container search-container" >
+        <img class="card-img-top search-img" src="{{book.volumeInfo.imageLinks.thumbnail}}" style="height:200px"alt="loading....">
+        <div class="card-body">
+          <div class="book-title">
+            <h5 class="card-title " style="font-size: 30px;overflow:hidden;">{{book.volumeInfo.title}}</h5>
+          </div>
+          <h6>by
+            {{book.volumeInfo.authors.0}}</h6>
+            <div class="subtitle">
+              <p class="card-text" style="margin:0px 15px;font-size:20px;">{{book.volumeInfo.subtitle }}</p>
+            </div>
+          
+        </div>
+
+        <div class="card-body">
+          <a href="{%url 'root:detail' book.volumeInfo.title%} " class="card-link ind-btn">details</a>
+        </div>
+      </div>
+      {%endfor%}
+    </div>
+
+
+{%endblock%}

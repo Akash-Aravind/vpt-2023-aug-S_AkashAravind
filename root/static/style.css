@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+    height: 650px;
+    background-image:     linear-gradient( rgba(0,0,0,.6), rgba(0,0,0,.6) ),url("https://149645218.v2.pressablecdn.com/wp-content/uploads/2020/09/Copy-of-SAFAF-2X1-images-2020-09-18T173938.309.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}   
+
+.quote{
+    padding-top: 150px;
+    padding-left: 250px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 57px;
+
+}
+
+.quote h5{
+    padding-left: 450px;
+    font-size: 40px;
+
+}
+
+.buttonbar{
+    transform: translate(85px,250px);
+    display: inline-block;
+}
+
+.btn{
+    background-color: #286090;
+    color: white;
+    padding: 11px 30px;
+    font-size: large;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-right: 45px;
+}
+
+.searchform{
+    transform: translate(1074px,200px);
+
+    width: 423px;
+}
+
+.search-input{
+    height: 36px;
+    border-radius: 15px;
+    font-size: 17px;
+    padding: 5px 15px;
+}
+
+/* index's css*/
+.container{
+    display: inline-block;
+    height: 55rem;
+    width: 30rem;
+    margin: 0px 30px;
+    padding: 0;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+.container h5{
+    margin: 5px 15px;
+}
+.container h6{
+    margin: 5px 15px;
+
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ind-btn{
+    background-color: #286090;
+    color: white;
+    padding: 11px 10px;
+    margin: 5px 15px;
+    width: 142px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+.main-img{
+    width:20rem;
+    width: 20rem;
+    height: 316px;
+    margin:0px 45px;
+}
+
+.book-title{
+    display: flex;
+    overflow: hidden;
+    height: 45px;
+}
+
+/* searchpage */
+
+.search-total{
+    display: flex;
+    width: 100%;
+    flex-flow: wrap;
+    flex-direction: row;
+
+}
+.search-container{
+    margin: 45px 35px;
+    height: 50rem;
+}
+
+.search-img{
+    width: 22rem;
+    margin: 28px 30px;
+}
+
+.subtitle{
+    display: flex;
+    height: 100px;
+    overflow: hidden;
+}
+
+/* wishview */
+.wish-links{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin: 20px;
+}

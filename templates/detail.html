@@ -1,0 +1,41 @@
+{%extends "base.html"%}
+{%block content%}
+<div style="margin:30px;border:2px solid black">
+
+
+<div>
+    <img src="{{bookinfo.volumeInfo.imageLinks.thumbnail}}" alt="sorry image not available :() " style="height: 500px;">
+</div>
+<div>
+    {{bookinfo.volumeInfo.title}}
+</div>
+
+<div>
+    {{bookinfo.volumeInfo.authors.0}}
+</div>
+<div>
+    {{bookinfo.volumeInfo.Publisheddate}}
+</div>
+
+<div>
+    {{bookinfo.volumeInfo.description}}
+</div>
+
+<div>
+    {{bookinfo.volumeInfo.pageCount}}
+</div>
+
+<div>
+    {{bookinfo.volumeInfo.categories.0}}
+</div>
+<div>
+    {{bookinfo.volumeInfo.maturityRating}}
+</div>
+
+<div>
+    {{bookinfo.volumeInfo.averageRating}}
+</div>
+<a href="{{bookinfo.accessInfo.webReaderLink}}">GOOGLE READ</a>
+</div>
+
+{%endblock%}
